@@ -1,0 +1,187 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1920px;
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+}
+
+.header__title {
+  color: #161d25;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.header__subtitle {
+  padding-right: 7px;
+  color: #5d7085;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  padding-top: 137px;
+}
+
+.cards {
+  padding-top: 68px;
+}
+
+.cards__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+}
+
+.cards__card-list-item {
+  max-width: 266px;
+  min-height: 601px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 2px;
+  padding-right: 36.4px;
+  padding-left: 35px;
+}
+
+.card__personal {
+  background: linear-gradient(180deg, #fdc624 0%, #e6c434 99.36%);
+}
+
+.card__business {
+  background: linear-gradient(180deg, #55dce7 0%, #3dcad4 100%);
+}
+
+.card__developer {
+  background: linear-gradient(180deg, #6bdfff 0%, #3dacfc 100%);
+}
+
+.card__agency {
+  background: linear-gradient(180deg, #bfcedc 0%, #939fb3 100%);
+}
+
+.card__image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 186.3px;
+  padding-right: 2px;
+}
+
+.card__image {
+  align-items: center;
+  margin-top: auto;
+}
+
+.card__title {
+  padding-top: 14.7px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.card__description {
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.card__price {
+  display: flex;
+  gap: 3px;
+  padding-top: 27px;
+}
+
+.card__currency {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card__price-value {
+  color: #fff;
+  font-weight: 700;
+  font-size: 67px;
+  letter-spacing: -0.1px;
+}
+
+.card__advantages {
+  flex-grow: 1;
+  padding-top: 8px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  list-style: url("../images/Done.svg") inside;
+}
+
+.card__advantages-item {
+  margin-bottom: 17px;
+}
+
+.card__buy-button {
+  margin-top: auto;
+  margin-bottom: 36px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  padding: 13px 51px 11px 52px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+.card__accent-button {
+  margin-top: auto;
+  margin-bottom: 36px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  padding: 13px 51px 11px 52px;
+  color: #44a9fd;
+  font-weight: 500;
+  font-size: 14px;
+  background: #ffffff;
+  white-space: nowrap;
+}
+
+.card__accent-shield {
+  position: absolute;
+  top: 0;
+  right: -36.4px; /* вычитаем правый padding */
+  left: -35px; /* вычитаем левый padding карточки */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 31px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  list-style: url("../images/Path.svg") inside;
+  background: linear-gradient(180deg, #63d6fe 0%, #5dd4f8 100%);
+}
